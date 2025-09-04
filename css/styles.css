@@ -7,12 +7,15 @@
 
 html{
     font-size: 62.5% ;
-    /* scroll-behavior: smooth; */
+   
     scroll-snap-type: Y proximity;
 }
-section{
-    scroll-snap-align: center;
+section {
+  scroll-snap-align: start; 
+  scroll-margin-top: 6rem;  
+  min-height: 100vh;
 }
+
 p, li, a, label{
 font-family: "urbanist", sans-serif;
 font-size: 1.8rem;
@@ -796,6 +799,27 @@ footer .grid-four--cols {
             gap: 0.4rem;
         }
     }
+  
+.footer-1--div {
+  width: 100%;
+
+  & .social-footer--icons {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 1rem;         
+
+    & i { 
+      flex: 0 1 40px;   
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--supporting-color);
+      border-radius: 50%;
+      font-size: 2rem;
+    }
+  }
+}
 
 }
 /* media Queries starting from here ends*/
